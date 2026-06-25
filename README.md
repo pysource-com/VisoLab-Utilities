@@ -18,6 +18,8 @@ Run `VisoLabel_Train_From_Token.ipynb` in a GPU Colab runtime. The form cell pro
 - Bundle preview and dataset validation logs.
 - RF-DETR training with current Lightning behavior, visible progress, compatible resolution adjustment, and a high-level fallback.
 - Classification training for image-folder bundles.
+- A compact realtime log showing the latest training line, with the full log retained below and uploaded as an artifact.
+- Specific training failure messages, including CUDA out-of-memory guidance to use Colab Pro/Pro+ GPUs or lower the VisoLabel batch size and start a new run.
 - Checkpoint/log upload back to VisoLabel.
 
 Treat the token as a secret because it can resolve and decrypt the bundle until expiry.
